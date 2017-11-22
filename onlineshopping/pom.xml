@@ -12,6 +12,12 @@
         <spring.version>4.3.6.RELEASE</spring.version>
         <spring.security.version>4.2.2.RELEASE</spring.security.version>
     </properties>
+    <configuration>
+        <processTypes>
+            <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+        </processTypes>
+    </configuration>
+
     <dependencies>
         <!-- Link backend project -->
         <dependency>
